@@ -26,9 +26,16 @@ export default {
       // })
 
       // mutation-types中定义的名字
+      // this.$store.commit({
+      //   type: SETCOUNT,
+      //   n: 9
+      // })
+
+      // 演示为什么mutation必须是同步的
+      // 异步的演示
+      // mutation中如果异步修改状态，devtools无法实时跟踪状态的变化
       this.$store.commit({
-        type: SETCOUNT,
-        n: 9
+        type: 'setCount4'
       })
     }
   }
