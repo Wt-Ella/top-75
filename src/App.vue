@@ -2,7 +2,10 @@
   <div id="app">
     <component1></component1>
     <component2></component2>
+    <!-- state -->
     <component3></component3>
+    <!-- getters -->
+    <component4></component4>
   </div>
 </template>
 

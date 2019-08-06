@@ -11,6 +11,12 @@ const store = new Vuex.Store({
     count: 0,
     msg: 'Hello World'
   },
+  getters: {
+    // getter 类似于计算属性
+    reverseMsg (state) {
+      return state.msg.split('').reverse().join('')
+    }
+  },
   // 更改 state 的mutation
   mutations: {
     // 第一个参数是 state
