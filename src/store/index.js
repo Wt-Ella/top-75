@@ -38,8 +38,19 @@ const store = new Vuex.Store({
     },
     // 演示为什么mutation必须是同步的
     setCount4 (state) {
+
       setTimeout(() => {
         state.count++
+      }, 2000);
+    }
+  },
+  actions: {
+    // context具有和store相同的属性和方法，内部可能会用到state和mutation
+    setCount (context) {
+      // 模拟异步操作
+      setTimeout(() => {
+        // 修改状态，提交mutaion
+        context.commit('setCount')
       }, 2000);
     }
   }

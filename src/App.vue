@@ -8,6 +8,8 @@
     <component4></component4>
     <!-- mutaion -->
     <component5></component5>
+    <!-- action -->
+    <component6></component6>
 
   </div>
 </template>
@@ -26,7 +28,8 @@ export default {
     Component2,
     Component3,
     Component4,
-    Component5
+    Component5,
+    Component6
   }
 }
 </script>
