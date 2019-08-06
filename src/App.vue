@@ -2,6 +2,7 @@
   <div id="app">
     <component1></component1>
     <component2></component2>
+    <component3></component3>
   </div>
 </template>
 
