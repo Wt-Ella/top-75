@@ -1,23 +1,22 @@
 <template>
   <div id="app">
-    <parent></parent>
-
-    <hr>
-    <foo></foo>
-    <bar></bar>
+    <component1></component1>
+    <component2></component2>
   </div>
 </template>
 
 <script>
-import Parent from './components/Parent'
-import Foo from './components/Foo'
-import Bar from './components/Bar'
+import Component1 from './components/vuex/Component1'
+import Component2 from './components/vuex/Component2'
+import Component3 from './components/vuex/Component3'
+import Component4 from './components/vuex/Component4'
 export default {
   name: 'app',
   components: {
-    Parent,
-    Foo,
-    Bar
+    Component1,
+    Component2,
+    Component3,
+    Component4
   }
 }
 </script>

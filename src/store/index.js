@@ -1,0 +1,23 @@
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+// 注册插件
+Vue.use(Vuex)
+
+// 创建仓库
+const store = new Vuex.Store({
+  // 状态
+  state: {
+    count: 0,
+    msg: 'Hello World'
+  },
+  // 更改 state 的mutation
+  mutations: {
+    // 第一个参数是 state
+    setCount (state) {
+      state.count++
+    }
+  }
+})
+
+export default store
