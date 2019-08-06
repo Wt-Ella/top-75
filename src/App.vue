@@ -6,6 +6,9 @@
     <component3></component3>
     <!-- getters -->
     <component4></component4>
+    <!-- mutaion -->
+    <component5></component5>
+
   </div>
 </template>
 
@@ -14,13 +17,16 @@ import Component1 from './components/vuex/Component1'
 import Component2 from './components/vuex/Component2'
 import Component3 from './components/vuex/Component3'
 import Component4 from './components/vuex/Component4'
+import Component5 from './components/vuex/Component5'
+import Component6 from './components/vuex/Component6'
 export default {
   name: 'app',
   components: {
     Component1,
     Component2,
     Component3,
-    Component4
+    Component4,
+    Component5
   }
 }
 </script>

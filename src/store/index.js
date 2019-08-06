@@ -22,6 +22,14 @@ const store = new Vuex.Store({
     // 第一个参数是 state
     setCount (state) {
       state.count++
+    },
+    // 载荷 Payload  就是mutation的第二个参数
+    setCount1 (state, n) {
+      state.count += n
+    },
+    // 传递多个参数，可以使用对象的方式
+    setCount2 (state, payload) {
+      state.count += payload.n
     }
   }
 })
