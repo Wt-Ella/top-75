@@ -1,8 +1,12 @@
 <template>
   <div>
-    <h1>Parent</h1>
+    <h1>Parent {{ count }}</h1>
 
-    <child :number="count"></child>
+    <!-- 注册事件：当事件触发之后，会执行此处的函数 -->
+    <child @changenum="handleChange" :number="count"></child>
+
+    <child @changenum="count = $event" :number="count"></child>
+    
   </div>
 </template>
 
@@ -15,6 +19,12 @@ export default {
   data () {
     return {
       count: 0
+    }
+  },
+  methods: {
+    handleChange (num) {
+      console.log(num)
+      console.log('handleChange')
     }
   }
 }
