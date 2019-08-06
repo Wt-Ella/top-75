@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import { SETCOUNT } from '@/store/mutation-types'
 export default {
   methods: {
     handle () {
@@ -19,9 +20,15 @@ export default {
       // })
 
       // 对象风格的提交方式
+      // this.$store.commit({
+      //   type: 'setCount2',
+      //   n: 8
+      // })
+
+      // mutation-types中定义的名字
       this.$store.commit({
-        type: 'setCount2',
-        n: 8
+        type: SETCOUNT,
+        n: 9
       })
     }
   }

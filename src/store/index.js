@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import { SETCOUNT } from './mutation-types'
 
 // 注册插件
 Vue.use(Vuex)
@@ -29,6 +30,10 @@ const store = new Vuex.Store({
     },
     // 传递多个参数，可以使用对象的方式
     setCount2 (state, payload) {
+      state.count += payload.n
+    },
+    // 使用 mutation-types 的方式，定义mutation的名字，防止出现错误
+    [SETCOUNT] (state, payload) {
       state.count += payload.n
     }
   }
