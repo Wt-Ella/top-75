@@ -5,8 +5,28 @@ import { SETCOUNT } from './mutation-types'
 // 注册插件
 Vue.use(Vuex)
 
+// // 创建一个模块
+const moduleA = {
+  state: {
+    count: 0
+  },
+  getters: {
+  },
+  mutations: {
+    setACount (state) {
+      state.count++
+    }
+  },
+  actions: {
+  }
+}
+
 // 创建仓库
 const store = new Vuex.Store({
+  // 加载模块
+  modules: {
+    a: moduleA
+  },
   // 状态
   state: {
     count: 0,

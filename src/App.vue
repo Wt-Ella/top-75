@@ -12,6 +12,10 @@
     <component6></component6>
     <!-- 演示map辅助函数 -->
     <map1></map1>
+    <!-- 演示Module -->
+    <component7></component7>
+
+
   </div>
 </template>
 
@@ -23,6 +27,8 @@ import Component4 from './components/vuex/Component4'
 import Component5 from './components/vuex/Component5'
 import Component6 from './components/vuex/Component6'
 import Map1 from './components/vuex/Map'
+import Component7 from './components/vuex/Component7'
+
 export default {
   name: 'app',
   components: {
@@ -32,7 +38,8 @@ export default {
     Component4,
     Component5,
     Component6,
-    Map1
+    Map1,
+    Component7
   }
 }
 </script>
